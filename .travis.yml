@@ -2,12 +2,12 @@ language: objective-c
 xcode_project: Decodable.xcodeproj
 osx_image: xcode7
 script:
-  rake test:ios
-  rake test:osx
-  rake test:osx
-  rake test:xctool:ios
+  - rake test:ios;
+  - rake test:osx;
+  - rake test:osx;
+  - rake test:xctool:ios;
 
-  mkdir test
-  cd test
-  "github \"Anviking/Decodable\" master" > Cartfile
-  carthage update
+  - mkdir test;
+  - cd test
+  - "github \"Anviking/Decodable\" master" > Cartfile
+  - carthage update
